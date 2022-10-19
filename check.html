@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IST524 Final Project</title>
+<link href="css/styles.css" rel="stylesheet">
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+ <script>
+	  function wrongAnswer1(){
+      $("#feedback").html("<h2 style='color:red'> That is not the main feature of Edpuzzle </h2>");
+      $("#ed").hide();
+   }
+   function wrongAnswer2(){
+      $("#feedback").html("<h2 style='color:red'> That is not the main feature of Edpuzzle  </h2>");
+      $("#ed").hide();
+   }
+function wrongAnswer3(){
+      $("#feedback").html("<h2 style='color:red'> That is not the main feature of Edpuzzle  </h2>");
+      $("#ed").hide();
+   }
+      function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! The main feature of Edpuzzle is Customizing Video </h2>");
+         $("#ed").show();
+      }
+   </script>	
+</head>
+
+<body>
+	
+	<div id="wrapper">
+		
+		<header>
+	<h1>What is the main feature of Edpuzzle?</h1>
+			
+		</header>
+	
+	<nav>
+		<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="account.html">Create</a></li>
+		<li><a href="content.html">Add Content</a></li>
+		<li><a href="custom.html">Customizing</a></li>
+		<li><a href="check.html">Knowledge</a></li>
+		<li><a href="location.html">Location</a></li>
+		</ul>
+	</nav>
+		
+		<main>
+		
+		<h2>Click on one of the following choices</h2>
+
+<h2 onclick="wrongAnswer1()" class="choices"> Customizing Photo </h2>
+<h2 onclick="wrongAnswer2()" class="choices"> Customizing Text </h2>
+<h2 onclick="rightAnswer()" class="choices"> Customizing Video </h2>
+<h2 onclick="wrongAnswer3()" class="choices"> Customizing Music </h2>
+		
+<br>
+		
+<div id="feedback"></div>
+	<br>
+		
+<img id="ed" src="images/edpuzzle1.png" alt="edpuzzle image" width="318" height="257"/>
+
+		</main>
+		
+	</div> <!-- end of wrapper -->
+	
+	<footer>
+		<p>Houda Bou Rafeh</p>
+		<p>California State University, Monterey Bay</p>
+		<p>IST 541: Final Project Website</p>
+	</footer>
+</body>
+</html>

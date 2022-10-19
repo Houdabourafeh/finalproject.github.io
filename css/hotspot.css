@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-color:#D9D9D9;   /* background color */
+	color: #444;          /* text color for the entire page */
+	font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+nav {
+	position: relative;
+	background-color: #B4AB74;
+	overflow: hidden;
+
+}
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	
+}
+nav li {
+	display: inline-block;
+	font-size: 1.25em;
+	font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+	border-right: 1px solid #fff;
+}
+nav li:last-child{
+	border-right: none;
+}
+nav li a {
+	display: block;
+	color: #fff;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+nav li a:hover{
+	color: #F3D1AC;
+	opacity: 0.9;
+}
+
+h1, h2, h3 { 
+	text-align:center; 
+	/* centers h1 and h2 content */
+}
+p, li {
+	text-align: left;
+	font-size: 15px; 
+}
+
+/* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
+#wrapper {
+      width:900px;
+      margin:0 auto;      /* centers wrapper */
+      background: white;  /* background color */
+      text-align:center;  /* centers wrapper content */
+}
+
+/*Style rules for Footer content */
+footer {
+	font-size: 0.95em;
+	background-color: #B4AB74;
+	color:#fff;
+	padding: 1% 0;
+}
+
+footer p {
+	text-align: center;
+}
+
